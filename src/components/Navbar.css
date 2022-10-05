@@ -1,0 +1,12 @@
+.nav{
+    display: flex;
+    height: 70px;
+    box-shadow: 0px 1px 8px red;
+}
+
+#navlogo{
+    display: block;
+    margin: auto;
+    height: 100%;
+
+}
