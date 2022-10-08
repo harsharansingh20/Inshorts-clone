@@ -1,3 +1,23 @@
+img.logo{
+    height: 25px !important ;
+    padding-left: 13px;
+
+}
 .downloadmsg{
-    height: 21px !important ;
+    padding: 2px ,3px;
+    margin-top: 23px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 37, 37);
+    height: 35px;
+    font-weight: 450;  
+    color: antiquewhite;
+
+}
+@media (max-width: 720px ){
+    .downloadmsg{
+        display: none;
+    }
 }

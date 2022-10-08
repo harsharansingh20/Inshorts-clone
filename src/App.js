@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import NewsContent from "./components/NewsContent/NewsContent"
 import apiKey from './components/data/config';
+import NewsCard from './components/NewsCard/NewsCard';
 
 const App = () => {
 
@@ -35,7 +36,7 @@ useEffect(() => {
   return (
     <div>
       <Navbar setCategory = {setCategory} />
-      <NewsContent/>
+      <NewsContent newsArray={newsArray}  newsResults={newsResults}  />
     </div>
   )
 }
