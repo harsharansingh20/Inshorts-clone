@@ -13,7 +13,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import categories from './data/category';
 
-export default function SwipeableTemporaryDrawer() {
+export default function SwipeableTemporaryDrawer({setCategory}) {
   const [state, setState] = React.useState({
     
     left: false,
@@ -49,7 +49,7 @@ export default function SwipeableTemporaryDrawer() {
       <Divider />
       <List>
         {categories.map((text, index) => (
-          <ListItem key={text} disablePadding>
+          <ListItem button key={text}  onClick={()=> setCategory(text)}>
             <ListItemButton>
               {/* <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
